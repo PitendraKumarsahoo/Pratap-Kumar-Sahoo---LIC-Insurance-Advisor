@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "Stores user profile information for authenticated clients and advisors",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 254 },
+        "displayName": { "type": "string", "maxLength": 100 },
+        "photoURL": { "type": "string", "maxLength": 500 },
+        "role": { "type": "string", "enum": ["client", "admin"] },
+        "phone": { "type": "string", "maxLength": 20 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "Consultation": {
+      "title": "Consultation Enquiry",
+      "description": "Consultation requests submitted by prospective insurance clients",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "fullName": { "type": "string", "maxLength": 100 },
+        "phoneNumber": { "type": "string", "maxLength": 20 },
+        "email": { "type": "string", "maxLength": 254 },
+        "preferredContactMethod": { "type": "string", "enum": ["phone", "whatsapp", "email"] },
+        "areaOfInterest": { "type": "string", "maxLength": 100 },
+        "planName": { "type": "string", "maxLength": 150 },
+        "preferredLanguage": { "type": "string", "maxLength": 50 },
+        "message": { "type": "string", "maxLength": 2000 },
+        "consentGiven": { "type": "boolean" },
+        "status": { "type": "string", "enum": ["pending", "contacted", "in_progress", "completed", "cancelled"] },
+        "adminNotes": { "type": "string", "maxLength": 2000 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["fullName", "phoneNumber", "areaOfInterest", "consentGiven", "status"]
+    },
+    "SavedPlan": {
+      "title": "Saved Insurance Plan",
+      "description": "Bookmark of plans a client is considering",
+      "type": "object",
+      "properties": {
+        "planId": { "type": "string", "maxLength": 100 },
+        "planName": { "type": "string", "maxLength": 150 },
+        "category": { "type": "string", "maxLength": 100 },
+        "savedAt": { "type": "string" },
+        "notes": { "type": "string", "maxLength": 1000 }
+      },
+      "required": ["planId", "planName", "category"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles for authenticated clients and advisors"
+    },
+    "/users/{userId}/savedPlans/{planId}": {
+      "schema": "SavedPlan",
+      "description": "Saved insurance plans for a specific user"
+    },
+    "/consultations/{consultationId}": {
+      "schema": "Consultation",
+      "description": "Insurance consultation and enquiry submissions"
+    }
+  }
+}

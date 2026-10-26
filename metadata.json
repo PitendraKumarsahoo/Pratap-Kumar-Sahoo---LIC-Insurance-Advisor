@@ -1,0 +1,6 @@
+{
+  "name": "Pratap Kumar Sahoo - LIC Insurance Advisor",
+  "description": "Official website of Pratap Kumar Sahoo, individual LIC insurance advisor in Bhubaneswar, Odisha. Explore life insurance plans, policy servicing, and request personal consultations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

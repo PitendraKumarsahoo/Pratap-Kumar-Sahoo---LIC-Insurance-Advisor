@@ -1,0 +1,903 @@
+# MASTER WEBSITE BUILD PROMPT — PROFESSIONAL LIC AGENT WEBSITE
+
+## 1. YOUR ROLE
+
+Act as a senior UI/UX designer, full-stack developer, conversion-focused web designer, accessibility specialist, and SEO expert.
+
+Build a complete, premium, production-quality, multi-page website for an individual Life Insurance Corporation of India (LIC) insurance agent serving customers in Bhubaneswar, Odisha, India.
+
+This is a real-client presentation project. The result must look suitable for a professional insurance advisor's business, not a student project, generic template, AI-generated demo, or one-page landing page.
+
+Build the actual working website, not just a design description.
+
+## 2. CLIENT INFORMATION
+
+Use the following details throughout the website:
+
+- Business type: Individual LIC insurance agent/advisor
+- Primary location: Bhubaneswar, Odisha, India
+- Phone: +91 89086 77424
+- WhatsApp: +91 89086 77424
+- Instagram: https://www.instagram.com/lic.bhubaneswar?dlrf=a3Z2NHdsejVuNHFv
+- Official LIC website: https://www.licindia.in/
+- Official LIC products: https://www.licindia.in/en/web/guest/products
+- Official LIC insurance plans: https://www.licindia.in/en/web/guest/insurance-plan
+- Official LIC policy status: https://licindia.in/en/web/guest/policy-status
+
+IMPORTANT PLACEHOLDERS:
+The agent's legal name, photograph, licence/appointment details, LIC branch, office address, email, years of experience, and testimonials have not yet been supplied.
+
+Use editable placeholders for these fields. Never invent personal or professional credentials. Clearly mark missing business information for the site owner to complete before launch.
+
+## 3. PRIMARY OBJECTIVE
+
+Create a professional digital presence that helps potential customers:
+
+1. Understand life insurance and explore available LIC products.
+2. Find plans relevant to family protection, savings, children's future, and retirement planning.
+3. Request a personal consultation.
+4. Contact the agent immediately using WhatsApp or telephone.
+5. Find official LIC premium-payment and policy-servicing resources.
+6. Understand the difference between general product information and personalized policy advice.
+7. Trust the business because the website is clear, informative, secure-looking, and easy to use.
+
+The primary conversion is a qualified enquiry or consultation request.
+
+Do not implement online insurance sales, policy issuance, premium collection, or customer-account functionality unless separately authorized and properly integrated.
+
+## 4. DESIGN DIRECTION
+
+Create an elegant, premium Indian financial-services website.
+
+The visual style should communicate trust, stability, family protection, professionalism, and clarity.
+
+### Color palette
+
+Use a carefully balanced palette:
+
+- Deep navy: #102A43
+- LIC-inspired deep blue: #004C97
+- Refined warm gold: #C5A15B
+- White: #FFFFFF
+- Light background: #F5F7FA
+- Body text: #334155
+- Muted text: #64748B
+- Borders: #E2E8F0
+- Success green only for appropriate statuses and contact indicators.
+
+Do not make every section blue. Use navy for strong headings, white and soft neutral backgrounds for content, blue for primary actions, and restrained gold accents.
+
+Do not reproduce LIC's official corporate branding as though this independent agent's site were the corporate website. Use official brand assets only when their use is permitted. Otherwise, use a neutral professional wordmark and an independently designed visual identity.
+
+### Typography
+
+Use a professional, highly readable font pairing such as Inter for interface text and headings, or an equivalent modern sans-serif.
+
+Requirements:
+- Clear visual hierarchy.
+- Comfortable body-text sizing.
+- Strong contrast.
+- Short paragraphs.
+- Readable line lengths.
+- Consistent spacing.
+- No tiny disclaimer text.
+- No excessively large headings that consume the screen.
+
+### Overall design
+
+Use:
+- Spacious layouts.
+- Carefully aligned containers.
+- Subtle borders and restrained shadows.
+- Consistent rounded corners.
+- Beautiful, high-quality photography.
+- Refined iconography.
+- Subtle, fast animations.
+- Strong alignment and visual rhythm.
+- Professional cards and responsive data tables.
+
+Avoid:
+- Excessive gradients.
+- Neon colors.
+- Glassmorphism everywhere.
+- Overused floating shapes.
+- Emoji-based icons.
+- Excessive text inside cards.
+- Giant blank spaces.
+- Random animations.
+- Unnecessary carousels.
+- Huge rounded pills for every component.
+- Generic AI-generated layouts with identical sections repeated throughout.
+
+Every page must have a clear purpose and distinctive content layout.
+
+## 5. MULTI-PAGE ROUTING — REQUIRED
+
+Create separate, directly accessible routes. Do not put the entire website into a single scrolling page.
+
+Required pages:
+
+1. `/` — Home
+2. `/about` — About the Agent
+3. `/plans` — All Insurance Plans
+4. `/plans/endowment` — Endowment Plans
+5. `/plans/whole-life` — Whole-Life Plans
+6. `/plans/money-back` — Money-Back Plans
+7. `/plans/term-insurance` — Term Assurance Plans
+8. `/plans/child-plans` — Child-Focused Plans
+9. `/plans/retirement` — Pension and Retirement Plans
+10. `/plans/market-linked` — Unit-Linked Plans
+11. `/plans/health-and-riders` — Relevant Health Products and Riders
+12. `/services` — Customer Services
+13. `/services/premium-payment` — Premium Payment
+14. `/services/policy-servicing` — Policy Servicing and Policy Status
+15. `/services/claims` — Claim Guidance
+16. `/faq` — Frequently Asked Questions
+17. `/contact` — Contact and Consultation
+18. `/privacy-policy` — Privacy Policy
+19. `/disclaimer` — Insurance and Website Disclaimer
+20. `/404` or an equivalent branded not-found page.
+
+All routes must work when opened directly, refreshed, or accessed through a shared URL.
+
+If a particular category contains no verified current products, explain that customers should check the official LIC catalogue. Do not populate it with invented products.
+
+## 6. GLOBAL HEADER AND NAVIGATION
+
+Build a premium, responsive header.
+
+Desktop:
+- Brand/logo area on the left.
+- Home.
+- About.
+- Plans dropdown.
+- Services dropdown.
+- FAQ.
+- Contact.
+- Prominent "Talk to an Advisor" CTA.
+
+Mobile:
+- Compact brand area.
+- Accessible hamburger menu.
+- Large touch targets.
+- Collapsible plan categories.
+- Visible contact CTA.
+- No overflowing horizontal navigation.
+
+Header behaviour:
+- Sticky on scroll where appropriate.
+- White background with a subtle divider.
+- Smooth dropdowns.
+- Clear active-page indication.
+- Keyboard-accessible navigation.
+- No layout shift when menus open.
+
+Add a slim top information bar if it fits the design, with the service location and contact availability only after those details are confirmed.
+
+## 7. HOME PAGE — `/`
+
+Create a beautiful, editorial-style home page with the following sections.
+
+### A. Hero section
+
+Use a two-column desktop layout.
+
+Left side:
+Small eyebrow:
+"PERSONALIZED LIFE INSURANCE GUIDANCE"
+
+Main heading:
+"Plan for Tomorrow. Protect What Matters Today."
+
+Supporting copy:
+"Explore life insurance options, plan for your family's future, and get personal guidance from an LIC agent."
+
+Primary button:
+"Book a Consultation"
+
+Secondary button:
+"Explore Insurance Plans"
+
+Additional text:
+"Clear information. Personal guidance. Support when you need it."
+
+Right side:
+A high-quality, authentic-looking photograph of an Indian family with a professional financial advisor, or a tasteful family-protection photograph.
+
+Do not use fake LIC office photographs, fabricated customer portraits presented as real testimonials, or misleading product imagery.
+
+Add a discreet contact card with:
+- Phone number.
+- WhatsApp CTA.
+- Bhubaneswar, Odisha.
+
+Do not show fabricated statistics, customer counts, award badges, or experience figures.
+
+### B. Quick navigation
+
+Create four polished cards:
+- Protect Your Family.
+- Plan for Your Child's Future.
+- Build Long-Term Savings.
+- Plan for Retirement.
+
+Each card should open the relevant plan category and explain that suitability depends on individual circumstances and official policy terms.
+
+### C. Explore insurance plans
+
+Display attractive category cards for:
+- Term Assurance.
+- Endowment.
+- Whole Life.
+- Money Back.
+- Child-Focused Plans.
+- Pension and Retirement.
+- Unit-Linked Plans.
+- Relevant Health Products and Riders.
+
+Each card should have a relevant photograph or clean icon, short description, and "Explore Plans" link.
+
+Avoid promising a financial outcome.
+
+### D. Why consult an agent?
+
+Show practical service benefits, without inventing performance claims:
+- Help understanding policy features.
+- Guidance on comparing available options.
+- Assistance navigating application requirements.
+- Help understanding policy servicing procedures.
+- Guidance on claim documentation.
+- Ongoing communication for service enquiries.
+
+Do not guarantee policy approval, claim settlement, investment returns, or a specific premium.
+
+### E. Featured plans
+
+Show a small, curated collection of currently verified LIC products.
+
+Each card must contain:
+- Official product name.
+- Category.
+- Plan number and UIN, only when verified.
+- A concise factual summary.
+- Official details link.
+- "Discuss This Plan" button.
+
+Do not show fabricated premiums, bonus rates, returns, or benefit calculations.
+
+### F. Customer service shortcuts
+
+Create four clear service cards:
+- Pay Premium.
+- Check Policy Status.
+- Understand Claim Procedures.
+- Contact Your Advisor.
+
+Route customers to the relevant official LIC resource or provide an accurate explanatory page.
+
+### G. How consultation works
+
+Use three simple steps:
+
+1. Tell us your goals.
+2. Discuss suitable available options.
+3. Review official policy terms before making a decision.
+
+Do not imply that submitting an enquiry creates a policy or guarantees acceptance.
+
+### H. Frequently asked questions
+
+Show five or six common questions and link to the complete FAQ page.
+
+### I. Final CTA
+
+Heading:
+"Have Questions About Your Insurance Options?"
+
+Copy:
+"Let's discuss your goals and help you find the official information you need."
+
+Buttons:
+- WhatsApp the Agent.
+- Call the Agent.
+
+### J. Footer
+
+Include business identity, navigation, policy categories, customer services, phone, WhatsApp, Instagram, privacy policy, disclaimer, and official LIC links.
+
+## 8. ABOUT THE AGENT — `/about`
+
+Create a professional personal-business profile page.
+
+Sections:
+- Agent profile hero.
+- Genuine agent portrait placeholder.
+- Full name placeholder.
+- Verified agent appointment/licence details where appropriate.
+- Service location.
+- Languages spoken, to be confirmed.
+- Short professional introduction.
+- Areas of customer assistance.
+- Consultation process.
+- Contact CTA.
+
+Use editable placeholder text:
+"[Agent Full Name]"
+"[Verified Agent Details]"
+"[Service Area]"
+"[Languages Spoken]"
+"[Office Address, if applicable]"
+
+Do not invent qualifications, testimonials, professional history, awards, number of policies sold, customer counts, or years of service.
+
+Use the agent's actual photograph after the client supplies it.
+
+## 9. ALL PLANS — `/plans`
+
+Create a full catalogue with category filters and search.
+
+Features:
+- Search by plan name.
+- Filter by category.
+- Sort alphabetically.
+- Reset filters.
+- Responsive grid on desktop and mobile.
+- Clear empty states.
+- Official details links.
+- Enquiry CTA on each product.
+- Visible notice that product availability and eligibility must be verified.
+
+Each plan record should support:
+
+- Product name.
+- Category.
+- Plan number.
+- UIN.
+- Short factual description.
+- Official product URL.
+- Official brochure/PDF URL, if verified.
+- Status: verified current, needs verification, or withdrawn.
+- Last verified date.
+- Optional display image from a legitimate source.
+
+Do not use unverified data as though it were current.
+
+Only products marked "verified current" may appear in the active catalogue.
+
+### Seed the catalogue with verified examples
+
+Use the following examples as initial records to verify against current official LIC pages before publishing:
+
+ENDOWMENT:
+- LIC's Single Premium Endowment Plan.
+- LIC's New Endowment Plan.
+- LIC's New Jeevan Anand.
+- LIC's Jeevan Lakshya.
+- LIC's Jeevan Labh Plan.
+- LIC's Amritbaal.
+- LIC's Nav Jeevan Shree.
+- LIC's Bima Lakshmi.
+- LIC's New Jeevan Sathi — Single Premium.
+- LIC's New Jeevan Sathi — Limited Premium.
+- LIC's New Bima Jyoti.
+- LIC's Bima Platinum.
+
+TERM ASSURANCE:
+- LIC's Digi Term.
+- LIC's Digi Credit Life.
+- LIC's Yuva Credit Life.
+- LIC's Yuva Term.
+- LIC's New Tech-Term.
+- LIC's Saral Jeevan Bima.
+- LIC's Bima Kavach.
+- LIC's Jeevan Raksha.
+
+MONEY BACK:
+- LIC's Bima Shree.
+- LIC's New Money Back Plan — 20 Years.
+- LIC's New Money Back Plan — 25 Years.
+- LIC's New Children's Money Back Plan.
+- LIC's Jeevan Tarun.
+
+PENSION AND ANNUITY:
+- LIC's New Pension Plus.
+- LIC's Jeevan Akshay-VII.
+- LIC's New Jeevan Shanti.
+- LIC's Saral Pension.
+- LIC's Smart Pension.
+- LIC's New Jeevan Dhara-II.
+
+WHOLE LIFE:
+- LIC's Jeevan Utsav.
+- LIC's Jeevan Umang.
+
+UNIT-LINKED:
+- LIC's Index Plus.
+- LIC's Nivesh Plus.
+- LIC's SIIP.
+- LIC's Protection Plus.
+
+These names are an initial research list, not a final verified inventory. Check each item against its latest official category page, brochure, and product status. If a product has been withdrawn, move it out of the active catalogue. Do not guess the UIN or plan number.
+
+For health-related products and riders, only add products supported by the current official catalogue. Explain whether a product is a life insurance product, an attached rider, or another insurance product. Do not imply that every rider can be purchased independently.
+
+## 10. INDIVIDUAL PLAN DETAIL PAGES
+
+When a user opens a plan, show a dedicated page or modal with a shareable route.
+
+Include:
+- Exact official product name.
+- Category.
+- Plan number and UIN where verified.
+- A simple overview.
+- Who might consider exploring it, stated in general terms.
+- Officially documented features.
+- Premium-payment options only if verified.
+- Eligibility and policy-term information only if verified.
+- Exclusions, conditions, and limitations as stated in official documents.
+- Official brochure link.
+- Official product page link.
+- "Ask About This Plan" CTA.
+- Disclaimer.
+
+Do not create an independent premium quotation engine using made-up formulas.
+
+If official documents are unavailable, show:
+"Please consult the official LIC product page or brochure for the latest terms and eligibility."
+
+## 11. CUSTOMER SERVICES — `/services`
+
+Create a customer-service hub, not an insurance purchase portal.
+
+Display:
+- Premium payment.
+- Policy status.
+- Customer portal registration.
+- Policy servicing.
+- Claim guidance.
+- Nomination-related information.
+- Address or contact-detail change guidance.
+- Loan or other service guidance, when applicable.
+- Official customer resources.
+
+Use the current official LIC portal links. Never ask customers to enter passwords, OTPs, complete policy numbers, Aadhaar numbers, bank details, or sensitive medical information into this website.
+
+### Premium payment — `/services/premium-payment`
+
+Explain that customers should use the official LIC payment channel.
+
+Primary button:
+"Open Official LIC Website"
+
+Link:
+https://www.licindia.in/
+
+Provide a short warning to verify the domain before entering payment details.
+
+Never collect premiums on the agent website.
+
+### Policy status — `/services/policy-servicing`
+
+Explain that customers can use the official LIC customer portal for eligible services.
+
+Official reference:
+https://licindia.in/en/web/guest/policy-status
+
+Button:
+"Check Policy Status on LIC"
+
+Include concise guidance to complete any registration or authentication only on the official website.
+
+### Claims — `/services/claims`
+
+Create a clear informational guide:
+1. Contact the agent for general procedural guidance.
+2. Identify the appropriate claim type.
+3. Check the official LIC requirements.
+4. Prepare the documents specified by LIC.
+5. Submit documents through the appropriate authorized channel.
+6. Follow the official claim-status process.
+
+Separate death claims, maturity claims, and other claims where supported by official guidance.
+
+Do not promise claim settlement, claim amounts, approval dates, or acceptance.
+
+Do not request death certificates, medical reports, or other sensitive documents through an ordinary website form.
+
+## 12. CONTACT — `/contact`
+
+Create a polished, dedicated contact page.
+
+Show:
+- Phone: +91 89086 77424
+- WhatsApp: +91 89086 77424
+- Instagram: https://www.instagram.com/lic.bhubaneswar?dlrf=a3Z2NHdsejVuNHFv
+- Location: Bhubaneswar, Odisha, India
+- Office address: "[Add verified office address if applicable]"
+- Agent name: "[Add full name]"
+
+Use the correct contact links:
+
+Telephone:
+tel:+918908677424
+
+WhatsApp:
+https://wa.me/918908677424
+
+Instagram:
+https://www.instagram.com/lic.bhubaneswar?dlrf=a3Z2NHdsejVuNHFv
+
+All contact buttons must work.
+
+### Consultation form
+
+Fields:
+- Full name.
+- Phone number.
+- Email address, optional.
+- Preferred contact method.
+- Area of interest.
+- Preferred language, if confirmed.
+- Brief message, optional.
+- Consent checkbox for being contacted.
+
+Area-of-interest options:
+- Family protection.
+- Savings and long-term planning.
+- Child-focused planning.
+- Retirement planning.
+- Existing policy servicing.
+- Claim procedure.
+- General enquiry.
+
+Form requirements:
+- Validate required fields.
+- Validate phone input.
+- Provide accessible error messages.
+- Show a clear success state only after successful submission.
+- Do not expose submitted information in public pages.
+- Do not store personal data in localStorage.
+- Do not silently discard submissions.
+- Do not claim the form was sent if no submission endpoint exists.
+
+If a backend is not configured, provide a working WhatsApp enquiry fallback that opens a prefilled message with the visitor's consent. Encode the message safely for a URL.
+
+If a persistent enquiry system is implemented, use an approved backend such as a properly configured serverless endpoint or database, with appropriate access control and privacy protection.
+
+Never put API keys, service-role keys, or private credentials in frontend code.
+
+## 13. WHATSAPP INTEGRATION
+
+Add a fixed WhatsApp contact button across all main pages.
+
+Requirements:
+- Use the supplied number.
+- Use an appropriate WhatsApp icon.
+- Position it so it does not cover page content or mobile navigation.
+- Provide a text label for accessibility.
+- Open a prefilled message, for example:
+
+"Hello, I visited your website and would like to know more about LIC insurance plans. Please contact me."
+
+For plan-specific enquiries, prefill:
+"Hello, I would like to know more about [verified plan name]. Please share the official details and explain the eligibility and features."
+
+Do not send a message automatically. The visitor must initiate the conversation.
+
+## 14. INSTAGRAM AND SOCIAL MEDIA
+
+Add the supplied Instagram profile in:
+- Header or top utility area where appropriate.
+- Contact page.
+- Footer.
+- Optional social-contact section on the home page.
+
+Use:
+https://www.instagram.com/lic.bhubaneswar?dlrf=a3Z2NHdsejVuNHFv
+
+Open external social links safely.
+
+Do not fabricate an Instagram feed or follower count. If an Instagram embed is unavailable, use a clean profile link rather than a broken widget.
+
+## 15. OFFICIAL LIC LOGO, PHOTOGRAPHY, AND ADVERTISEMENTS
+
+Use visual assets responsibly.
+
+### LIC logo
+- Prefer an official, legitimately sourced asset if permitted for this website.
+- Preserve its proportions.
+- Do not redraw or distort the logo.
+- Do not create a fake LIC badge.
+- Do not imply corporate endorsement of this independent website.
+- If permission or permitted use is uncertain, use a neutral independent brand identity with a text link to the official LIC website.
+
+### Photographs
+Use high-quality, relevant images showing:
+- Indian families.
+- Parents and children.
+- Retirement-age couples.
+- Professional consultations.
+- Family financial planning.
+- Responsible customer service.
+
+Use properly licensed images or authorized official assets. Keep a record of image sources and usage permissions.
+
+Avoid:
+- Watermarked images.
+- Fake customer testimonials.
+- Misleading policy certificates.
+- Fabricated government or LIC endorsements.
+- Fake cheque or bonus advertisements.
+- Images implying guaranteed wealth or guaranteed claim payments.
+
+### Advertisements
+Create a restrained promotional area that can display approved, factual campaign material.
+
+If an official LIC advertisement or policy banner is used:
+- Verify the source and permission to use it.
+- Preserve required disclosures.
+- Do not edit out conditions, exclusions, or risk warnings.
+- Ensure that any required insurer approval has been obtained.
+
+Do not automatically generate policy advertisements containing unverified benefits or financial claims.
+
+## 16. FAQ PAGE — `/faq`
+
+Build an accessible accordion with these questions:
+
+1. What is life insurance?
+2. How do I explore LIC insurance plans?
+3. How can I compare different policy categories?
+4. How can I check my policy status?
+5. Where can I pay my LIC premium?
+6. How do I obtain a policy brochure?
+7. What information may be needed for a consultation?
+8. How can I understand policy eligibility?
+9. How do I begin a claim enquiry?
+10. Can I contact the agent on WhatsApp?
+11. Does this website issue LIC policies?
+12. Is every displayed product available to every customer?
+
+Answers must be concise, factual, and easy to understand.
+
+Clarify that eligibility, premiums, benefits, and exclusions depend on the specific product and the insurer's applicable terms.
+
+## 17. PRIVACY POLICY — `/privacy-policy`
+
+Create a plain-language privacy policy appropriate to the actual implemented features.
+
+Cover:
+- Information collected through enquiries.
+- Why it is collected.
+- How it is used.
+- Whether and how it is shared.
+- Data retention.
+- Security precautions.
+- Contact details for privacy enquiries.
+- Relevant consent and user-rights information.
+- Third-party services and external links.
+
+Do not claim that no data is collected if forms or analytics actually collect data.
+
+Do not claim compliance certifications or legal guarantees without evidence.
+
+Mark the draft for review against applicable Indian privacy and data-protection requirements before public launch.
+
+## 18. DISCLAIMER — `/disclaimer`
+
+Display a readable disclaimer that explains:
+
+"This website is an independently operated informational website for an individual insurance agent. It is not the official corporate website of Life Insurance Corporation of India (LIC). LIC's official website is https://www.licindia.in/.
+
+Product names, descriptions, plan numbers, UINs, brochures, eligibility criteria, premiums, benefits, exclusions, and terms must be verified against the latest official LIC documents. Product availability and individual eligibility may vary.
+
+This website provides general information and does not constitute a policy contract, a personalized financial recommendation, or a guarantee of policy issuance, returns, bonuses, or claim settlement. The applicable policy document and insurer-approved terms govern the actual insurance contract."
+
+Have the agent review the wording and add any required identity, licensing, registration, or regulatory disclosures before launch.
+
+Do not use this wording as a substitute for applicable legal requirements.
+
+## 19. INSURANCE COMPLIANCE REQUIREMENTS
+
+Follow applicable Indian insurance-advertising requirements and the agent's actual authorization.
+
+- Identify the actual agent/business.
+- Include verified and applicable agent identity or licence information.
+- Clearly identify the insurance provider.
+- Use official product names and accurate descriptions.
+- Obtain required approvals for policy-specific advertisements.
+- Display relevant disclosures in a readable manner.
+- Provide a privacy notice.
+- Do not make misleading claims.
+- Do not display unverified testimonials or fabricated results.
+- Do not use phrases such as "100% guaranteed returns", "guaranteed claim approval", or "best plan for everyone".
+- Do not describe market-linked products as risk-free.
+- Do not misrepresent bonuses, returns, premiums, or coverage.
+- Do not use official corporate branding in a way that suggests this is LIC's own corporate website.
+
+Keep regulatory requirements configurable and have the agent verify current obligations before launch.
+
+## 20. TECHNICAL STACK
+
+Use a modern, maintainable stack appropriate for a small professional business website.
+
+Preferred:
+- React.
+- TypeScript.
+- Vite or an equivalent supported framework.
+- Tailwind CSS.
+- Accessible UI components.
+- React Router or an equivalent routing solution.
+- Lucide icons.
+- A maintainable data file for policy catalogue content.
+
+If the platform already uses a working framework, preserve its architecture unless there is a clear reason to change it.
+
+Use reusable components:
+- Header.
+- Footer.
+- Navigation menu.
+- Breadcrumbs.
+- Plan cards.
+- Plan filters.
+- Contact CTA.
+- Consultation form.
+- WhatsApp button.
+- FAQ accordion.
+- Disclaimer banner.
+- Loading and empty states.
+
+Avoid unnecessary dependencies and paid services.
+
+Do not add an AI chatbot, payment gateway, CRM, complex backend, or authentication system unless required and properly configured.
+
+## 21. ADMIN AND CONTENT MAINTENANCE
+
+Design the content so the agent can update:
+- Name.
+- Photograph.
+- Phone.
+- WhatsApp.
+- Instagram.
+- Office information.
+- Service area.
+- Languages.
+- Policy catalogue.
+- Official links.
+- Featured plans.
+- Promotional banners.
+- FAQs.
+
+For the initial version, use a centralized, clearly documented configuration or data file.
+
+Do not build a fake admin login that appears functional but does not securely save changes.
+
+If an admin panel is added later, implement real authentication, server-side authorization, input validation, and secure storage.
+
+Never place admin secrets in the client-side bundle.
+
+## 22. RESPONSIVE DESIGN
+
+The website must work beautifully on:
+- Android phones.
+- iPhones.
+- Tablets.
+- Laptops.
+- Large desktop screens.
+
+Requirements:
+- Mobile-first layout.
+- No horizontal overflow.
+- Readable text.
+- Properly sized buttons.
+- Responsive plan grids.
+- Mobile-friendly navigation.
+- Accessible form controls.
+- Appropriate image cropping.
+- Floating WhatsApp button that does not obstruct content.
+- Proper safe-area spacing on mobile devices.
+
+Test at approximately 360px, 390px, 768px, 1024px, and 1440px widths.
+
+## 23. SEO AND DISCOVERABILITY
+
+Create unique metadata for every route.
+
+Suggested homepage title:
+"LIC Insurance Agent in Bhubaneswar | Personal Insurance Guidance"
+
+Suggested description:
+"Explore LIC insurance plan categories, find official product information, and contact an insurance agent in Bhubaneswar for personal guidance."
+
+Requirements:
+- Semantic HTML.
+- One clear main heading per page.
+- Meaningful image alt text.
+- Canonical URLs once the real domain is configured.
+- XML sitemap.
+- robots.txt.
+- Open Graph metadata.
+- Descriptive internal links.
+- Breadcrumbs on nested pages.
+- Clean URLs.
+- Fast page loading.
+- Appropriate local business information only when verified.
+
+Do not add fake ratings or structured-data reviews.
+
+Do not create fake office addresses or claim a verified Google Business Profile.
+
+## 24. PERFORMANCE AND ACCESSIBILITY
+
+Target a high-quality Lighthouse score, while prioritizing real usability.
+
+Implement:
+- Responsive image sizes.
+- Lazy loading for below-the-fold images.
+- Correct image dimensions.
+- Minimal JavaScript.
+- Optimized fonts.
+- No unnecessary animation libraries.
+- Keyboard navigation.
+- Visible focus states.
+- Accessible labels.
+- WCAG-conscious color contrast.
+- Reduced-motion support.
+- Descriptive error messages.
+- Accessible accordions and menus.
+
+Do not sacrifice readability for visual effects.
+
+## 25. FUNCTIONAL TESTING
+
+Before declaring the website complete, verify:
+
+- Every navigation link opens the correct route.
+- Every nested route survives refresh.
+- All plan filters and searches work.
+- Every plan CTA opens the correct enquiry flow.
+- Telephone links open the dialer.
+- WhatsApp links open the correct number.
+- Instagram opens the supplied profile.
+- Official LIC links open the intended pages.
+- Forms validate input.
+- Form submission never falsely reports success.
+- The mobile menu opens and closes correctly.
+- The footer links work.
+- No broken images exist.
+- No placeholder text is accidentally presented as real business information.
+- No fabricated product details exist.
+- No horizontal overflow exists.
+- The 404 page works.
+- Browser console errors are resolved.
+- Build and deployment succeed.
+
+Provide clear setup and deployment instructions for the selected platform.
+
+## 26. FINAL DESIGN ACCEPTANCE CRITERIA
+
+The completed website must feel like a premium, real-world professional insurance advisory business.
+
+It must not look like:
+- A basic college project.
+- A single-page demo.
+- A generic insurance template.
+- A wall of text.
+- A dashboard pretending to be a public website.
+- An unofficial copy of LIC's corporate site.
+
+The home page should immediately establish trust. The policy catalogue should be easy to explore. Service pages should be genuinely useful. Contact should be effortless. Disclaimers should be readable. The site should be honest about what it can and cannot do.
+
+Create complete pages with real layouts, consistent design, realistic content, working navigation, and responsive behavior.
+
+Do not stop after generating the home page. Complete all required routes.
+
+At the end, provide:
+1. A list of completed pages.
+2. A list of functional features.
+3. A list of missing client details.
+4. A list of policy records that still require verification.
+5. Any compliance items that require the agent's confirmation.
+6. Setup and deployment instructions.
+
+Build the complete website now.

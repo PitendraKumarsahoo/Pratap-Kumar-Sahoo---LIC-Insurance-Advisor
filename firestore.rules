@@ -1,0 +1,119 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all unknown collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() &&
+        request.auth.token.email == 'pitendrakumarsahoo84@gmail.com' &&
+        request.auth.token.email_verified == true;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // User profile validation
+    function isValidUser(data) {
+      return data.keys().hasAll(['uid', 'email', 'role']) &&
+        data.keys().hasOnly(['uid', 'email', 'displayName', 'photoURL', 'role', 'phone', 'createdAt', 'updatedAt']) &&
+        data.uid is string && data.uid.size() <= 128 &&
+        data.email is string && data.email.size() <= 254 &&
+        data.role in ['client', 'admin'] &&
+        (!('displayName' in data) || (data.displayName is string && data.displayName.size() <= 100)) &&
+        (!('phone' in data) || (data.phone is string && data.phone.size() <= 20));
+    }
+
+    // Consultation validation
+    function isValidConsultation(data) {
+      return data.keys().hasAll(['fullName', 'phoneNumber', 'areaOfInterest', 'consentGiven', 'status']) &&
+        data.keys().hasOnly(['userId', 'fullName', 'phoneNumber', 'email', 'preferredContactMethod', 'areaOfInterest', 'planName', 'preferredLanguage', 'message', 'consentGiven', 'status', 'adminNotes', 'createdAt', 'updatedAt']) &&
+        data.fullName is string && data.fullName.size() > 0 && data.fullName.size() <= 100 &&
+        data.phoneNumber is string && data.phoneNumber.size() >= 7 && data.phoneNumber.size() <= 20 &&
+        data.areaOfInterest is string && data.areaOfInterest.size() <= 100 &&
+        data.consentGiven is bool && data.consentGiven == true &&
+        data.status in ['pending', 'contacted', 'in_progress', 'completed', 'cancelled'] &&
+        (!('email' in data) || (data.email is string && data.email.size() <= 254)) &&
+        (!('planName' in data) || (data.planName is string && data.planName.size() <= 150)) &&
+        (!('message' in data) || (data.message is string && data.message.size() <= 2000)) &&
+        (!('adminNotes' in data) || (data.adminNotes is string && data.adminNotes.size() <= 2000)) &&
+        (!('userId' in data) || (data.userId is string && data.userId.size() <= 128));
+    }
+
+    function isValidSavedPlan(data) {
+      return data.keys().hasAll(['planId', 'planName', 'category']) &&
+        data.keys().hasOnly(['planId', 'planName', 'category', 'savedAt', 'notes']) &&
+        data.planId is string && data.planId.size() <= 100 &&
+        data.planName is string && data.planName.size() <= 150 &&
+        data.category is string && data.category.size() <= 100 &&
+        (!('notes' in data) || (data.notes is string && data.notes.size() <= 1000));
+    }
+
+    // Match /users/{userId}
+    match /users/{userId} {
+      allow get: if isValidId(userId) && (isOwner(userId) || isAdmin());
+      allow list: if isAdmin();
+      
+      allow create: if isValidId(userId) && isOwner(userId) &&
+        isValidUser(incoming()) && incoming().uid == request.auth.uid &&
+        (isAdmin() || incoming().role == 'client');
+
+      allow update: if isValidId(userId) && (isOwner(userId) || isAdmin()) &&
+        isValidUser(incoming()) && incoming().uid == existing().uid &&
+        (isAdmin() || incoming().role == existing().role);
+
+      allow delete: if isValidId(userId) && isAdmin();
+
+      // Subcollection: Saved Plans
+      match /savedPlans/{planId} {
+        allow get, list: if isValidId(userId) && (isOwner(userId) || isAdmin());
+        allow create, update: if isValidId(userId) && isValidId(planId) && (isOwner(userId) || isAdmin()) && isValidSavedPlan(incoming());
+        allow delete: if isValidId(userId) && isValidId(planId) && (isOwner(userId) || isAdmin());
+      }
+    }
+
+    // Match /consultations/{consultationId}
+    match /consultations/{consultationId} {
+      allow get: if isValidId(consultationId) && (
+        isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid)
+      );
+
+      allow list: if isAdmin() || (
+        isSignedIn() && resource.data.userId == request.auth.uid
+      );
+
+      allow create: if isValidId(consultationId) &&
+        isValidConsultation(incoming()) &&
+        incoming().status == 'pending' &&
+        (!('userId' in incoming()) || (isSignedIn() && incoming().userId == request.auth.uid));
+
+      allow update: if isValidId(consultationId) && isAdmin() &&
+        isValidConsultation(incoming()) &&
+        incoming().fullName == existing().fullName &&
+        incoming().phoneNumber == existing().phoneNumber;
+
+      allow delete: if isValidId(consultationId) && isAdmin();
+    }
+  }
+}
